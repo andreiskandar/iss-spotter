@@ -1,38 +1,29 @@
 const { nextISSTimesForMyLocation } = require('./iss');
 
-/*
-nextISSTimesForMyLocation(passTimes => {
-	// if (error) {
-	// 	return console.log("It didn't work! ", error);
-	// }
+// fetchMyIP((error, ip) => {
+// 	if (error) {
+// 		console.log("It didn't work! ", error);
+// 		return;
+// 	}
+// 	console.log('It worked! Returned IP: ', ip);
 
-	// fetchMyIP((error, ip) => {
-	// 	if (error) {
-	// 		console.log("It didn't work! ", error);
-	// 		return;
-	// 	}
-	// 	console.log('It worked! Returned IP: ', ip);
+// 	fetchCoordsByIP(ip.ip, (error, coords) => {
+// 		if (error) {
+// 			console.log('Error: ', error);
+// 			return;
+// 		}
+// 		console.log('My coordinates: ', coords);
 
-	// 	fetchCoordsByIP(ip.ip, (error, coords) => {
-	// 		if (error) {
-	// 			console.log('Error: ', error);
-	// 			return;
-	// 		}
-	// 		console.log('My coordinates: ', coords);
+// 		fetchISSFlyOverTimes(coords, (err, passes) => {
+// 			if (err) {
+// 				console.log('Error: ', error);
+// 				return;
+// 			}
+// 			passTimes(passes);
 
-	// 		fetchISSFlyOverTimes(coords, (err, passes) => {
-	// 			if (err) {
-	// 				console.log('Error: ', error);
-	// 				return;
-	// 			}
-	// 			passTimes(passes);
-
-	// 			console.log('It worked! Returned flyover times: ', passes);
-	// 		});
-	// 	});
-	// });
-});
-*/
+// 			console.log('It worked! Returned flyover times: ', passes);
+// 		});
+// 	});
 
 const printPassTimes = passTimes => {
 	passTimes.forEach(item => {

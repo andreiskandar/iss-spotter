@@ -1,6 +1,7 @@
 const request = require('request');
 // const ipAPI = 'https://ipinfo.io/json';
 const ipAPI = 'https://api.ipify.org?format=json';
+const coordsAPI = `https://ipvigilante.com/json/`;
 
 /**
  * Makes a single API request to retrieve the user's IP address.
@@ -80,7 +81,6 @@ const fetchISSFlyOverTimes = (coords, callback) => {
 	});
 };
 
-const coordsAPI = `https://ipvigilante.com/json/`;
 // const coordsAPI = 'http://ip-api.com/json/';
 const nextISSTimesForMyLocation = lastCallback => {
 	fetchMyIP((err, ip) => {
